@@ -22,26 +22,22 @@ paths:
   /agent/list:
     x-swagger-router-controller: orders
     get:
-      description: Show all agents of service
-      # метод контроллера
+      description: List of agents on server
+      # used as the method name of the controller
       operationId: listAgents
-      parameters:
-        - name: spotId
-          in: query
-          description: Tea spot to filter out
-          required: false
-          type: string
-            responses:
-                "200":
-                    description: Success
-                    schema:
-                        # ссылка на определение
-                        $ref: "#/definitions/HelloWorldResponse"
-                # могут быть и ошибки
-                default:
-                    description: Error
-                    schema:
-                        $ref: "#/definitions/ErrorResponse"
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: array
+            items:
+                $ref: "#/definitions/AgentsList"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+            
   /tea/orders:
     # binds a127 app logic to a route
     x-swagger-router-controller: orders
@@ -159,6 +155,16 @@ paths:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions
 definitions:
+  AgentsList:
+    required:
+      - name
+    properties:
+      FirstName:
+        type: string
+      LastName:
+        type: string
+      Sold:
+        type: integer
   TeaSpot:
     required:
       - name
