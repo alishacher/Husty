@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  version: "0.0.4"
+  version: "0.0.1"
   title: FP Order service
 # during dev, should point to your local machine
 host: localhost:10011

@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<agents>
-    <agent firstName="Scarlett" lastName="Jacker" count="7"></agent>
-    <agent firstName="James" lastName="Snake" count="4"></agent>
-    <agent firstName="Alice" lastName="Bronder" count="6"></agent>
-    <agent firstName="Marry" lastName="White" count="3"></agent>
-</agents>
+<list title="agents">
+    <agent firstName="Scarlett" lastName="Jacker" count="7">
+        <reviews>
+            <review author="ivan" date="2020-02-20" rank="4">Awesome</review>
+            <review author="masha" date="2020-02-20" rank="5">WOW</review>
+            <review author="zara" date="2020-02-20" rank="3">Good</review>
+        </reviews>
+    </agent>
+    <agent firstName="James" lastName="Snake" count="4">
+        <reviews>
+            <review author="ivan" date="2020-02-20" rank="4">Awesome</review>
+            <review author="masha" date="2020-02-20" rank="5">WOW</review>
+            <review author="zara" date="2020-02-20" rank="3">Good</review>
+        </reviews>
+    </agent>
+    <agent firstName="Alice" lastName="Bronder" count="6">
+        <reviews>
+            <review author="ivan" date="2020-02-20" rank="4">Awesome</review>
+            <review author="masha" date="2020-02-20" rank="5">WOW</review>
+            <review author="zara" date="2020-02-20" rank="3">Good</review>
+        </reviews>
+    </agent>
+    <agent firstName="Marry" lastName="White" count="3">
+        <reviews>
+            <review author="ivan" date="2020-02-20" rank="4">Awesome</review>
+            <review author="masha" date="2020-02-20" rank="5">WOW</review>
+            <review author="zara" date="2020-02-20" rank="3">Good</review>
+        </reviews>
+    </agent>
+</list>
