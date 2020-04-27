@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <agents>
-    <agent>
-        <firstName>Scarlett</firstName>
-        <lastName>Johansson</lastName>
-        <count>7</count>
-    </agent>
-    <agent>
-        <firstName>Chris</firstName>
-        <lastName>Evans</lastName>
-        <count>3</count>
-    </agent>
-    <agent>
-        <firstName>Jeremy</firstName>
-        <lastName>Renner</lastName>
-        <count>4</count>
-    </agent>
+    <agent firstName="Scarlett" lastName="Jacker" count="7"></agent>
+    <agent firstName="James" lastName="Snake" count="4"></agent>
+    <agent firstName="Alice" lastName="Bronder" count="6"></agent>
+    <agent firstName="Marry" lastName="White" count="3"></agent>
 </agents>
