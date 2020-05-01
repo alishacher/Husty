@@ -1,5 +1,5 @@
 phantom:
-  address: targethost:10011 # [Target's address]:[target's port]
+  address: localhost:10022 # [Target's address]:[target's port]
   uris:
     - /api/v1/tea/orders
   load_profile:
