@@ -15,7 +15,10 @@ const instance_id = process.env.NODE_APP_INSTANCE || 0
 
 /* GET home page. */
 router.get('/', (req, res) => {
-	res.render('index', { company: "BSU", year: 2020 });
+	res.render('index', { company: "BSU", year: 2020,
+	version: packageGenVersion,
+	instance: instance_id,
+	host: hostname  });
 
   
 });
