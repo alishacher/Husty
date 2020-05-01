@@ -1,4 +1,4 @@
+export * from './AddAgent';
+export * from './AgentsList';
 export * from './ErrorResponse';
-export * from './TeaOrder';
-export * from './TeaSpot';
-export * from './TeaType';
+export * from './InfoAgent';
