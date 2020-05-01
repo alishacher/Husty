@@ -3,7 +3,7 @@ info:
   version: "0.0.1"
   title: Agent service
 # during dev, should point to your local machine
-host: localhost:10011
+host: localhost:10022
 # basePath prefixes all resource paths 
 basePath: /api/v1
 # 
@@ -97,7 +97,7 @@ definitions:
         type: integer
   InfoAgent:
     required:
-      - name
+      - LastName
     properties:
       FirstName:
         type: string

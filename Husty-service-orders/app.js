@@ -37,13 +37,13 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
   swaggerExpress.register(app);
 
 
-  var port = process.env.PORT || 10011;
+  var port = process.env.PORT || 10022;
   app.listen(port);
 
   logger.info('check this to see docs :\n  http://127.0.0.1:' + port + '/');
   
-  if (swaggerExpress.runner.swagger.paths['/tea/orders']) {
-  	logger.info('try this to test:\ncurl http://127.0.0.1:' + port + '/api/v1/tea/orders');
+  if (swaggerExpress.runner.swagger.paths['/agent/list']) {
+  	logger.info('try this to test:\ncurl http://127.0.0.1:' + port + '/api/v1/agent/list');
 
   }
 });
